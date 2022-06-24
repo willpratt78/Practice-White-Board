@@ -1,0 +1,27 @@
+Write an algorithem that removes duplicates from an array, 
+don't solve the problem with the filter method
+
+array could be string, integers, a mix
+
+example input [7, 9, "hi", 12, "hi", 7, 53]
+expected output [7, 9, "hi", 12, 53]
+
+always something given in the array
+
+solve in javascript
+
+input = [7, 9, "hi", 12, "hi", 7, 53]
+
+expectedOutput = []
+
+function removeDuplicates {
+	for (i = 0; i < input.length; i++){
+		for (j = i + 1; j < input.length; j++){
+			if (input[i] == input[j]) {
+				input[i] = ""
+			}else{
+				expectedOutput.push(input[i])
+			}
+	}
+	console.log(expectedOutput)
+}
