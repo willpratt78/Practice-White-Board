@@ -50,3 +50,21 @@ Input.forEach {
   else
     push.(array2)
 };
+
+prompt 4
+
+Example
+Input: "hello"
+
+Output: false
+
+Input: "copyright"
+
+Output: true
+
+Input.forEach () {
+  if(Input[i] == input[i+1])
+    return false
+  else
+    return true
+}
